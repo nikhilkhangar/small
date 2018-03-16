@@ -1,22 +1,69 @@
-<head>
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="text/javascript" src="https://wdfix6.pushcrewstaging.com/httpChild-without-tracker.min.js?v=14"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+      }
+      body, html {
+          height: 100%;
+          overflow: hidden;
+      }
+      .subscribe-helper-text {
+          margin-top: 18%;
+          text-align: center;
+          font-family: "Lato",sans-serif;
+          font-size: 20px;
+          padding: 20px 20px 0px 20px;
+      }
+      .subscribe-helper-text p {
+          margin-top: 10px;
+      }
+      .image-wrapper {
+          width: 118px;
+          margin: 10px auto;
+      }
+      .branding-logo {
+          max-width: 100%;
+      }
+      .hide{
+        display: none;
+      }
+      footer{
+        text-align: center;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        margin-top:10px;
 
-    <script type="text/javascript">
-    (function(p,u,s,h){
-        p._pcq=p._pcq||[];
-        p._pcq.push(['_currentTime',Date.now()]);
-        s=u.createElement('script');
-        s.type='text/javascript';
-        s.async=true;
-        s.src='https://cdn.pushcrewstaging.com/js/2c18adddd3d874e5c138d9921bb3ba84.js';
-        h=u.getElementsByTagName('script')[0];
-        h.parentNode.insertBefore(s,h);
-    })(window,document);
-</script>
-    
-</head>
-
-<body>
-
-self hosted    
-
-</body>
+      }
+      .pushcrew-branding-logo{
+        vertical-align: bottom;
+      }
+      </style>
+    </head>
+    <body>
+        <div class="subscribe-helper-text">
+          <div class="image-wrapper"><img class="branding-logo" id="js-logo-customer"></div>
+          <img id="js-spinner" src="https://pushcrew.com/assets/images/loader.gif" class="hide"></img>
+          <div id="js-text">
+            <p id="js-user-customize-text">Click on <strong>'Allow'</strong> to confirm push notifications</p>
+            <p style="font-size: 13px;" id="js-offer-text"></p>
+          </div>
+        </div>
+        <footer>
+          <a href="https://pushcrew.com/" target="_blank" style="text-decoration: none;" class="anchor_pushcrew">
+            <img class="pushcrew-branding-logo" width="16" height="16" src="https://www.pushcrew.com/assets/images/modal-branding.png"/>
+          </a>
+          <span>
+            <a href="https://pushcrew.com/" target="_blank" style="text-decoration: none;color: black;font-size: 12px;" class="anchor_pushcrew">   Powered by PushCrew
+            </a>
+          </span>
+        </footer>
+    </body>
+</html>
